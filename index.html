@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WOWBOOK log in or sign up</title>
+  <link rel="shortcut icon" href="icon.ic">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- start header -->
+  <header class="header">
+    <div class="container">
+  <div class="logo">
+    <h1>WOWBOOK</h1>
+  </div>
+  <div class="log-in">
+    <form action="login.php" method="post">
+      <div class="email">
+        <label for="user">User id</label>
+        <input type="text" name="user" id="user" required>
+      </div>
+      <div class="password">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+        
+      </div>
+      <div class="log">
+        <input type="submit" name="log-in" value="Log in">
+      </div>
+    </form>
+  </div>
+  </div>
+</header>
+<!-- end header  -->
+
+<!-- start signup -->
+<div class="signup">
+  <h2 style="text-align:center; margin-bottom:15px">Sign up here</h2>
+  <form action="connection.php" method="post">
+    <div class="full-name">
+      <div class="first-name">
+        <input type="text" name="first-name" placeholder="First name" required>
+      </div>
+      <div class="last-name">
+        <input type="text" name="last-name" placeholder="Last name" required>
+      </div>
+    </div>
+    <div class="user-name">
+      <input type="text" name="user-name" placeholder="Enter unique user name" required>
+    </div>
+    <div class="phonenumber">
+      <input type="text" name="phonenumber" placeholder="phonenumber" required>
+    </div>
+    <div class="address">
+      <input type="text" name="address" placeholder="Address" required>
+    </div>
+    <div class="signuppassword">
+      <input type="password" name="signuppass" placeholder="Enter new password" required>
+    </div>
+    <div class="signupbtn">
+      <input type="submit" name="signupbtn" value="Sign up">
+    </div>
+  </form>
+</div>
+<!-- end signup -->
+<br>
+<!-- start footer -->
+<footer>
+  <div class="footer">
+    <div class="copyright">
+    <i class="material-icons">copyright</i>
+    <p>Tanjidul Ahad</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
